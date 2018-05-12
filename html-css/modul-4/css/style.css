@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.conteiner {
+    width: 1110px;
+    margin: 0 auto;
+    /* background-color: rgb(47, 154, 255); */
+}
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.header {
+    margin-bottom: 20px;
+}
+.logotip {
+    font-size: 30px;
+    line-height: 32px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #555252;
+    float: left;
+    text-transform: uppercase;
+
+    
+}
+.logotip:first-letter {
+    color: #1abc9c;
+}
+.menu {
+    font-size: 14px;
+    line-height: 11px;
+    list-style: none;
+    float: right;
+    text-transform: uppercase;
+    
+}
+.menu-list {
+    float: left;
+    margin-right: 35px;
+    padding-top: 10px;
+
+}
+.menu-list:last-child {
+    margin-right: 0;
+}
+.menu-title {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+}
+.menu-title:hover {
+    color: #1abc9c;
+}
+h2 {
+    font-size: 48px;
+    line-height: 32px;
+    color: #515151;
+     text-align: center;
+     margin-top: 70px;
+     
+}
+h2::after {
+    content: '';
+    width: 160px;
+    height: 10px;
+    background-color: #1abc9c;
+    display: block;
+    margin: 30px auto 90px;
+
+}
+.product {
+    width: 255px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+.product:nth-child(4n) {
+    margin-right: 0;
+}
+.product:nth-last-child(-n+4) {
+    margin-bottom: 100px;
+}
+
+.name {
+    float: left;
+    font-size: 18px;
+    line-height: 32px;
+    width: 190px;
+    height: 40px;
+    background-color: #323232;
+    color: #ffffff;
+    padding-left: 15px;
+}
+.product:hover .name {
+    background-color: #1abc9c;
+}
+.product:hover .price {
+    background-color: #7fd9c7;
+}
+
+.price {
+    float: right;
+    font-size: 18px;
+    line-height: 32px;
+    width: 50px;
+    height: 40px;
+    background-color: #8c8c8c;
+    color: #ffffff;
+    text-align: center;
+}
+.img {
+    margin-bottom: -4px;
+}
+.title {
+    margin-bottom: ;
+}
+.aside {
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+    
+}
+.aside:last-child {
+    margin-right: 0;
+}
+.span {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.span::after {
+    content: '';
+    width: 137px;
+    height: 4px;
+    background-color: #1abc9c;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: block;
+}
+.text {
+    font-size: 14px;
+    line-height: 26px;
+
+}
+button {
+    width: 160px;
+    height: 51px;
+    background-color: #1abc9c;
+    color: #ffffff;
+    border-radius: 6px;
+
+}
