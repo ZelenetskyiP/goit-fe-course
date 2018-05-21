@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, 'Times New Roman', Times, serif
+}
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+body {
+    width: 1600px;
+    
+}
+/* header */
+.header {
+    width: 1110px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+.logotip {
+    font-size: 30px;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    float: left;
+    
+}
+.logotip::first-letter {
+    color: #1abc9c;
+    font-weight: bold;
+
+}
+.menu {
+    float: right;
+    
+}
+.menu-list {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+}
+.menu-list:last-child {
+    margin-right: 0;
+}
+.menu-item {
+    font-size: 14px;
+    line-height: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+.menu-item:hover {
+    color: #1abc9c;
+}
+    
+/* header */
+/* mein */
+
+.h1 {
+    font-size: 62px;
+    line-height: 82px;
+    text-transform: uppercase;
+    background-image: url(../img/1.jpg);
+    background-color: blue;
+    text-align: center;
+    padding-top: 215px;
+    padding-bottom: 300px;
+    position: relative;
+    color: #ffffff;
+
+}
+.arrow-l {
+    width: 105px;
+    height: 105px;
+    background-color: #73c8b4;
+    position: absolute;
+    top: 310px;
+    left: 245px;
+    
+}
+.arrow-l:hover {
+    background-color: #1abc9c;
+}
+.arrow-2 {
+    width: 105px;
+    height: 105px;
+    background-color: #73c8b4;
+    position: absolute;
+    top: 310px;
+    left: 1250px;
+    
+}
+.arrow-2:hover {
+    background-color: #1abc9c;
+}
+
+
+.h3 {
+    font-size: 24px;
+    line-height: 54px;
+    position: absolute;
+    left: 30%;
+    top: 58%;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.h2 {
+    font-size: 48px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 100px;
+    text-transform: uppercase;
+    color: #515151;
+
+
+}
+.h2::after {
+    content: '';
+    width: 160px;
+    height: 10px;
+    background-color: #1abc9c;
+    display: block;
+    margin: 30px auto 50px;
+}
+.fotos {
+   
+    width: 1110px;
+    margin: 0 auto;
+    
+    
+  
+}
+.foto {
+    width: 255px;
+    float: left;
+    margin-right: 30px;
+    position: relative;
+     
+}
+.foto:last-child {
+    margin-right: 0;
+}
+.maket {
+    margin-bottom: -4px;
+}
+.price-list {
+    font-size: 18px;
+    line-height: 32px;
+    background-color: #323232;
+    color: #ffffff;
+    float: left;;
+    width: 200px;
+    padding-left: 15px;
+
+}
+.price {
+    font-size: 18px;
+    line-height: 32px;
+    float: right;
+    width: 40px;
+    background-color: #8c8c8c;
+    color: #ffffff;
+    text-align: center;
+}
+.foto:hover > .price {
+    background-color: #1abc9c;
+
+}
+.foto:hover > .price-list {
+    background-color: #7fd9c7;
+}
+.order {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 20px);
+    border: 10px solid rgba(255, 255, 255, 0.8);
+    display: none;
+    height: 303px;
+}
+.icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.foto:hover > .order {
+    display: block;
+}
+.box:hover {
+    background-color: #1abc9c;
+}
+.boxx:hover {
+    background-color: #1abc9c;
+}
+
+button {
+    font-size: 12px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    
+}
+.box {
+    width: 35px;
+    height: 35px;
+    /* background-color: #f3f5; */
+    /* border: none; */
+    /* color: #ffffff; */
+    background: rgba(0, 0, 0, 0.3);
+}
+.boxx {
+    height: 40px;
+    /* border: none; */
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.icon-img {
+    width: 33px;
+    height: 33px;
+    /* background-color: #358241; */
+    /* display: inline-block; */
+    
+}
+
+
+.footer {
+    text-align: center;
+    background-color: #323232;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 100px;
+}
+
+
+/* button {
+    font-size: 14px;
+    text-transform: uppercase;
+} */
