@@ -1,0 +1,19 @@
+.p-footer {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.button-footer {
+    width: 150px;
+    height: 44px;
+    background-color: #95e1d3;
+    border: none;
+}
+span {
+    color: red
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 95px 0 28px 0;
+}
