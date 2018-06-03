@@ -36,14 +36,16 @@
 .menu-item {
     text-decoration: none;
     font-size: 14px;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #95e1d3;
     
 }
 .menu-item:hover {
     color: #f38181;
+   
 }
-.menu-item::after {
+.menu-item::after { 
     width: 50px;
     content: '';
     height: 3px;
@@ -52,4 +54,4 @@
 }
 .menu-list:hover > .menu-item::after {
     display: block;
-}
+} 
