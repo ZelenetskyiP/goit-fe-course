@@ -39,6 +39,7 @@
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #95e1d3;
+    position: relative;
     
 }
 .menu-item:hover {
@@ -47,6 +48,7 @@
 }
 .menu-item::after { 
     width: 50px;
+    position: absolute;
     content: '';
     height: 3px;
     background-color: #f38181;
