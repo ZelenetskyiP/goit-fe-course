@@ -1,0 +1,29 @@
+.header {
+    width: 940px;
+    background-color: #fff;
+    margin: auto;
+}
+.nav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    width: 490px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+}
+.menu-list {
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 41px;
+    color: #000000;
+    text-transform: uppercase
+}
+.menu-list:hover {
+    color: #fed136;
+}
