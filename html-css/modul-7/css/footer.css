@@ -2,7 +2,7 @@
    width: 1400px;
     background-image: url(../img/bacgraun.jpg);
     
-    margin-top: 120px;
+    margin: 120px auto 0;
 }
 .footer-section {
     width: 940px;
@@ -45,8 +45,22 @@ textarea {
     width: 455px;
     height: 228px;
     font-size: 18px;
+    resize: none;
 }
-.send {
+/* .send {
+    width: 265px;
+    height: 55px;
+    background-color: #fed136;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin: 30px 350px 100px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+} */
+
+input[type="submit"] {
     width: 265px;
     height: 55px;
     background-color: #fed136;
