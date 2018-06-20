@@ -1,0 +1,140 @@
+.wraper {
+    width: 320px;
+    margin: auto;
+    text-align: center;
+    
+}
+.header {
+    background-image: url(../img/vector.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 4.5rem;
+    
+}
+
+.menu {
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-item {
+    list-style: none;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    text-align: center;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+.menu-list::after {
+    content: '';
+    border: 2px solid #928d8a;;
+    border-radius: 35px;
+    padding: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+    display: none;
+    
+}
+.menu-item:hover > .menu-list::after {
+    display: block
+}
+.menu-list {
+    font-size: 0.9rem;
+    color: #928d8a;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700; 
+    
+}
+.nav {
+    position: relative;
+}
+.logotip {
+    color: #928d8a;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 98%; 
+    left: 25%;
+}
+.title {
+    text-align: center;
+    color: #928d8a;
+    font-size: 1.8rem;
+    padding: 0.4rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+}
+.nav {
+    margin-bottom: 2.5rem;
+    padding: 0 1rem 0 1rem;
+}
+.title-list {
+    text-align: center;
+    margin-top: 1.4rem;
+    font-size: 1.1rem;
+    color: #928d8a;
+    padding: 0 3rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+}
+.button {
+    margin-top: 1.1rem;
+    width: 17.5rem;
+    height: 2.6rem;
+    border: 3px solid #ff4e50;
+   background: rgba(255, 255, 255, 0.3);
+   
+    border-radius: 5rem;
+    font-size: 0.9rem;
+    margin-bottom: 16rem;
+    cursor: pointer;
+    padding: 0.4rem;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .wraper {
+        width: 768px;
+    }  
+    .nav {
+        
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+}
+    
+    .menu {
+        width: 32%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    }
+    .logotip {
+        position: static;
+        margin: 0;
+        margin-top: 2rem;
+    }
+    .button {
+        width: 14rem;
+    }
+}
+@media (min-width: 1024px) {
+    .wraper {
+        width: 1024px;
+    }
+    .nav {
+    width: 88%;
+    margin: 0 auto;
+    }
+    
+    
+
+
+}

@@ -1,0 +1,92 @@
+.main {
+    padding: 0 2rem;
+}
+.title-card {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    
+}
+
+.card-img {
+    width: 133px;
+    margin: 0 auto;
+    height: 125px;
+    position: relative;
+}
+.card-icon {
+    position: absolute;
+    top: 69%;
+    left: 60%
+}
+.card-icon {
+    color: #fff;
+    width: 2.2rem;
+    height: 1.5rem;
+    border-radius: 10rem;
+    padding-top: 0.8rem;
+    
+    border: 3px solid #fff
+    
+}
+.button:hover {
+    border-radius: 5rem;
+    background-color: #ff4e50;
+    color: #fff;
+}
+.Hunter {
+    background-color: #4e73db;
+}
+.Marsha {
+    background-color: #ffa507;
+}
+.Walker {
+    background-color: #1cd7ad;
+}
+
+
+.card-title {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+
+}
+.card-text {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #666666;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+}
+.card {
+    margin-bottom: 1.9rem;
+}
+.button-card {
+    color: #000;
+
+}
+@media (min-width: 768px) {
+    .main {
+        
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+    .card {
+        width: 40%;
+    }
+}
+@media (min-width: 1024px) {
+    .main {
+        width: 88%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
