@@ -47,7 +47,7 @@
    
 }
 .menu-item::after { 
-    width: 50px;
+    width: 100%;
     position: absolute;
     content: '';
     height: 3px;
