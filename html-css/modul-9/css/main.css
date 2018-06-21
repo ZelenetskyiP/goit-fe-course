@@ -1,0 +1,71 @@
+.title-card {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-top: 4.4rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+.card-img {
+    width: 133px;
+    margin: 0 auto;
+    height: 125px;
+    position: relative;
+}
+.card-icon {
+    position: absolute;
+    top: 69%;
+    left: 60%
+}
+.card-icon {
+    color: #fff;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 10rem;
+    padding-top: 0.2rem;
+    text-align: center;
+    border: 3px solid #fff
+    
+}
+.Bradley {
+    background-color: #ff4e50
+}
+.Hunter {
+    background-color: #4e73db;
+}
+.Marsha {
+    background-color: #ffa507;
+}
+.Walker {
+    background-color: #1cd7ad;
+}
+
+
+.card-title {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+
+}
+.card-text {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #666666;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+}
+.card {
+    margin-bottom: 1.9rem;
+}
+.button-card {
+    color: #000;
+
+}
