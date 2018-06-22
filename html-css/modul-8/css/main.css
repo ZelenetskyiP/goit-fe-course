@@ -68,6 +68,7 @@
 }
 .button-card {
     color: #000;
+    margin-bottom: 4.7rem;
 
 }
 @media (min-width: 768px) {
@@ -86,9 +87,7 @@
 }
 @media (min-width: 1024px) {
     .main {
-        
-        margin: 0 auto;
-        display: flex;
+        width: 1024px;
         flex-wrap: nowrap;
     }
 }

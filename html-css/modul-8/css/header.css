@@ -8,6 +8,7 @@
     background-image: url(../img/vector.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 4.5rem;
     
 }
@@ -73,8 +74,7 @@ a {
 }
 .nav {
     margin-bottom: 2.4rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    
 }
 .title-list {
     text-align: center;
@@ -123,7 +123,7 @@ a {
     }
     .logotip {
         position: static;
-        margin: 0;
+        margin-left: 3rem;
         margin-top: 2rem;
     }
     .button {
@@ -140,7 +140,7 @@ a {
         width: 1024px;
     }
     .main {
-        width: 1024px;
+       
     }
     .logotip {
         color: #fff;
