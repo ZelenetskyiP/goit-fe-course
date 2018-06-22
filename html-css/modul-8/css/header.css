@@ -1,5 +1,5 @@
 .wraper {
-    width: 320px;
+   min-width: 320px;
     margin: auto;
     text-align: center;
     
@@ -19,8 +19,8 @@
 }
 .menu-item {
     list-style: none;
-    margin-top: 2rem;
-    margin-bottom: 8rem;
+    margin-top: 1.9rem;
+    margin-bottom: 8.5rem;
     text-align: center;
     position: relative;
 }
@@ -62,6 +62,7 @@ a {
     left: 25%;
 }
 .title {
+    text-transform: uppercase;
     text-align: center;
     color: #928d8a;
     font-size: 1.8rem;
@@ -71,12 +72,13 @@ a {
     font-weight: 700;
 }
 .nav {
-    margin-bottom: 2.5rem;
-    padding: 0 1rem 0 1rem;
+    margin-bottom: 2.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .title-list {
     text-align: center;
-    margin-top: 1.4rem;
+    margin-top: 1.5rem;
     font-size: 1.1rem;
     color: #928d8a;
     padding: 0 3rem;
@@ -85,12 +87,11 @@ a {
     font-weight: 300;
 }
 .button {
-    margin-top: 1.1rem;
+    margin-top: 1.2rem;
     width: 17.5rem;
     height: 2.6rem;
     border: 3px solid #ff4e50;
-   background: rgba(255, 255, 255, 0.3);
-   
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 5rem;
     font-size: 0.9rem;
     margin-bottom: 16rem;
@@ -101,14 +102,18 @@ a {
 
 @media (min-width: 768px) {
     .wraper {
-        width: 768px;
+        width: 100%;
     }  
     .nav {
-        
+        width: 768px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
 }
+    .title-tex {
+        width: 768px;
+        margin: auto;
+    }
     
     .menu {
         width: 32%;
@@ -126,13 +131,22 @@ a {
     }
 }
 @media (min-width: 1024px) {
-    .wraper {
+    
+    .nav {
+        width: 1024px;
+        margin: 0 auto;
+    }
+    .title-tex {
         width: 1024px;
     }
-    .nav {
-    width: 88%;
-    margin: 0 auto;
+    .main {
+        width: 1024px;
     }
+    .logotip {
+        color: #fff;
+    }
+    
+    
     
     
 
