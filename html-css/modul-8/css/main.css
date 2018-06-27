@@ -1,5 +1,6 @@
 .main {
-    padding: 0 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .title-card {
     font-size: 1.4rem;
@@ -27,7 +28,6 @@
     height: 1.5rem;
     border-radius: 10rem;
     padding-top: 0.8rem;
-    
     border: 3px solid #fff
     
 }
@@ -74,8 +74,6 @@
 @media (min-width: 768px) {
     .main {
         width: 768px;
-    
-        
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
