@@ -11,7 +11,7 @@
     position: relative;
 }
 a {
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 .menu-list::after {
     content: '';
@@ -42,6 +42,7 @@ a {
 
 .menu-list:hover {
     color: #fff;
+    text-decoration: none;
 }
 .logotip {
     color: #fff;
@@ -52,6 +53,10 @@ a {
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
+}
+.logotip:hover {
+    color: #fff;
+    text-decoration: none;
 }
 .title {
     text-align: center;
@@ -102,7 +107,7 @@ header:before {
    
     border-radius: 5rem;
     font-size: 0.9rem;
-    margin-bottom: 14rem;
+    margin-bottom: 5rem;
     cursor: pointer;
     padding: 0.4rem;
     color: #fff;

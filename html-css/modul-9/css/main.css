@@ -64,6 +64,7 @@
 }
 .card {
     margin-bottom: 1.9rem;
+    border: none;
 }
 .button-card {
     color: #000;
