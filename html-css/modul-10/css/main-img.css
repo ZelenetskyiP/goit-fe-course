@@ -1,0 +1,103 @@
+.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* flex-wrap: wrap; */
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card-list__name {
+    margin: 40px auto 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card-list__pr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 15px;
+    line-height: 24px;
+    color: #9f9f9f;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+  .icon-conteiner-div {
+    /* display: flex;
+      justify-content: space-around; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url(../img/1b.jpg);
+  }
+  .card-list {
+    position: relative;
+  }
+  .order {
+    background: url(../img/1b.jpg);
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 106px);
+    display: none;
+    -webkit-transform: translate(-20px, -20px);
+        -ms-transform: translate(-20px, -20px);
+            transform: translate(-20px, -20px);
+    -webkit-box-shadow: 10px 10px 0 0 #95e1d3;
+            box-shadow: 10px 10px 0 0 #95e1d3;
+  }
+  
+  .card-list:hover > .order {
+    display: block;
+  }
+  
+  .card-list:hover > .card-list__img {
+      -webkit-transform: translate(-20px, -20px);
+          -ms-transform: translate(-20px, -20px);
+              transform: translate(-20px, -20px);
+  }
+  
+  .box {
+    width: 57px;
+    height: 57px;
+    
+    margin-right: 1px;
+    background-color: #fce38a;
+    border: none;
+  }
+  .box:hover {
+      background-color: #f38181;
+     ;
+     
+  }
+ 
+
+ 
+  .box__icon {
+      width: 1.8rem;
+      height: 1.8rem;
+      fill: #f38181;
+  }
+  
+  .box__icon:hover {
+    fill: #fff
+  }

@@ -1,0 +1,100 @@
+.main {
+    width: 75rem;
+    margin: 0 auto;
+}
+.main-title-h2 {
+font-size: 1.9rem;
+    text-align: center;
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    margin-top: 1.5rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+}
+.main-title-h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    display: block;
+    margin: 40px auto 0;
+}
+.main-title {
+    font-size: 1.5rem;
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3.1rem;
+}
+.info-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+    margin-top: 65px;
+}
+.info {
+   width: 350px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   
+   
+}
+.icon {
+    margin: 2px 20px 0 0;
+}
+
+.text__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 30px;
+    
+
+    
+}
+.text__p {
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-bottom: 105px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: #999999;
+
+    
+    
+}
+.p {
+    font-size: 15px;
+    line-height: 24px;
+    width: 960px;
+    text-align: center;
+    margin: 0 auto 100px;
+    margin-top: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #999999;
+}
+.info-div__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    fill: #95e1d3;
+    padding-right: 1.8rem;
+}
+
+
