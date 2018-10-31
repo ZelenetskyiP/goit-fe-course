@@ -1,7 +1,7 @@
 "use strict";
 
-const adminLogin = "1";
-const adminPassword = "2";
+const adminLogin = "admin";
+const adminPassword = "m4ngo1zh4ackz0r";
 
 const enterCencel = "Отменено пользователем!";
 const enterOk = "Добро пожаловать!";
@@ -17,10 +17,10 @@ if (login === null) {
   const userEnter = prompt(password);
   if (userEnter === null) {
     alert(enterCencel);
-  } 
+  }
   if (userEnter !== adminPassword) {
     alert(enterNo);
-  } 
+  }
   if (userEnter === adminPassword) {
     alert(enterOk);
   }
