@@ -10,22 +10,27 @@ let total = 0 ;
 
 
 do {
-  userInput = prompt('Введите число');
-
+  userInput = Number(prompt('Введите число', ''));
   numbers.push(userInput);
+  console.log(numbers);
+} while ((userInput !== null) && (Number(userInput)));
 
-//   console.log(numbers);
+// for(let i = 0; i < numbers.length; i++) {
+//     total = total + parseInt(numbers[i]);
+// }
 
-} while (userInput !== null);
+for (let sum of numbers) {
+  total += sum;
+};
+ 
 
-numbers.pop();
-
-for(let i = 0; i < numbers.length; i++) {
-    total = total + parseInt(numbers[i]);
-    
+if (total !== 0) {
+alert(`Общая сумма чисел равна ${ total }`);
 }
 
-alert(`Общая сумма чисел равна ${ total }`);
+
+
+
 
 
 
