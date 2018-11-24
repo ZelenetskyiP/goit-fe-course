@@ -1,38 +1,28 @@
-'use strict'
-
+"use strict";
 
 let userInput;
 const numbers = [];
-let total = 0 ;
-
-
-
+let total = 0;
 
 
 do {
-  userInput = Number(prompt('Введите число', ''));
-  numbers.push(userInput);
-  console.log(numbers);
-} while ((userInput !== null) && (Number(userInput)));
+  userInput = prompt("Введите число", "");
+  if (isNaN(userInput)) {
+    alert("Было введено не число, попробуйте еще раз");
+  } else if (userInput > 0) {
+    numbers.push(userInput);
+    for (let i = 0; i < numbers.length; i++) {
+      numbers[i] = +numbers[i];
+    }
+  }
 
-// for(let i = 0; i < numbers.length; i++) {
-//     total = total + parseInt(numbers[i]);
-// }
+} while (userInput !== null);
 
 for (let sum of numbers) {
   total += sum;
-};
- 
-
-if (total !== 0) {
-alert(`Общая сумма чисел равна ${ total }`);
 }
+alert(`Общая сумма чисел равна ${total}`);
 
-
-
-
-
-
-
+console.log(total);
 
 
