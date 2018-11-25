@@ -4,25 +4,26 @@ let userInput;
 const numbers = [];
 let total = 0;
 
-
 do {
   userInput = prompt("Введите число", "");
   if (isNaN(userInput)) {
     alert("Было введено не число, попробуйте еще раз");
-  } else if (userInput > 0) {
-    numbers.push(userInput);
-    for (let i = 0; i < numbers.length; i++) {
-      numbers[i] = +numbers[i];
-    }
+  } else if (userInput) {
+    numbers.push(Number(userInput));
   }
-
+  
 } while (userInput !== null);
 
 for (let sum of numbers) {
   total += sum;
 }
-alert(`Общая сумма чисел равна ${total}`);
+if (total) {
+  alert(`Общая сумма чисел равна ${total}`);
+}
 
 console.log(total);
+console.log(numbers);
+
+
 
 
