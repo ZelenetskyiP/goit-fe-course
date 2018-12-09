@@ -5,16 +5,18 @@ const numbers = [];
 let total = 0;
 
 do {
-  userInput = Number(prompt("Введите число", ""));
+  userInput = prompt("Введите число", "");
 
-  if (Number.isNaN(userInput)) {
+  if (Number.isNaN(+userInput)) {
     alert("Было введено не число, попробуйте еще раз");
   } else {
-    numbers.push(userInput);
+    if (userInput) {
+      numbers.push(+userInput);
+    }
   }
-} while (userInput !== 0);
+} while (userInput !== null);
 
-if (numbers.length > 1) {
+if (numbers.length > 0) {
   for (let sum of numbers) {
     total += sum;
   }
@@ -22,5 +24,5 @@ if (numbers.length > 1) {
   alert(`Общая сумма чисел равна ${total}`);
 }
 
-// console.log(total);
-// console.log(numbers);
+console.log(total);
+console.log(numbers);
