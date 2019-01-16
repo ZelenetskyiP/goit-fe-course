@@ -4,27 +4,27 @@
 
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
-const isLoginValid = function(login) {
-  return login.length >= 4 && login.length <= 16;
-};
+const isLoginOk = "Логин успешно добавлен!";
+const isLoginBusy = "Такой логин уже используется!";
+const isLoginError = "Ошибка! Логин должен быть от 4 до 16 символов";
+
+const isLoginValid = (login) => login.length >= 4 && login.length <= 16;
 
 // console.log(isLoginValid(''))
 
-const isLoginUnique = function(allLogins, login) {
-  return !allLogins.includes(login);
-};
+const isLoginUnique = (allLogins, login) => !allLogins.includes(login);
 // console.log(isLoginUnique(logins, ""));
 
 const addLogin = function(allLogins, login) {
   if (isLoginValid(login)) {
     if (isLoginUnique(allLogins, login)) {
       logins.push(login);
-      return "Логин успешно добавлен!";
+      return isLoginOk;
     } else {
-      return "Такой логин уже используется!";
+      return isLoginBusy;
     }
   } else {
-    return "Ошибка! Логин должен быть от 4 до 16 символов";
+    return isLoginError;
   }
 };
 
