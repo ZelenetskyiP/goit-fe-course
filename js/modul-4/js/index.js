@@ -20,7 +20,8 @@ const Cashier = function(name, productDatabase) {
   this.productDatabase = products;
   this.customerMoney = 0;
   this.getCustomerMoney = function(value) {
-    return (this.customerMoney = value);
+     this.customerMoney = value;
+     return this.customerMoney
   };
 
   this.countTotalPrice = function(order) {
@@ -35,8 +36,7 @@ const Cashier = function(name, productDatabase) {
   this.countChange = function(totalPrice) {
     if (this.customerMoney >= totalPrice) {
       return this.customerMoney - totalPrice;
-    }
-    if (this.customerMoney < totalPrice) {
+    } else {
       return null;
     }
   };
@@ -48,7 +48,8 @@ const Cashier = function(name, productDatabase) {
     return `Очень жаль, вам не хватает денег на покупки`;
   };
   this.reset = function() {
-    return (this.customerMoney = 0 + ` сумма денег обнулена`);
+    this.customerMoney = 0;
+    return this.customerMoney
   };
 };
 
@@ -83,3 +84,4 @@ if (change !== null) {
 mango.reset();
 // Проверяем значения после reset
 console.log(mango.customerMoney); // 0
+
