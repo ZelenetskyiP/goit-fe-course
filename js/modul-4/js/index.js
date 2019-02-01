@@ -20,8 +20,7 @@ const Cashier = function(name, productDatabase) {
   this.productDatabase = products;
   this.customerMoney = 0;
   this.getCustomerMoney = function(value) {
-     this.customerMoney = value;
-     return this.customerMoney
+    this.customerMoney = value;
   };
 
   this.countTotalPrice = function(order) {
@@ -34,22 +33,20 @@ const Cashier = function(name, productDatabase) {
   };
 
   this.countChange = function(totalPrice) {
-    if (this.customerMoney >= totalPrice) {
-      return this.customerMoney - totalPrice;
-    } else {
-      return null;
-    }
+    const countChangeTotal =
+      this.customerMoney >= totalPrice ? this.customerMoney - totalPrice : null;
+    return countChangeTotal;
   };
 
   this.onSuccess = function(change) {
     return `Спасибо за покупку, ваша сдача ${change}!`;
   };
+
   this.onError = function() {
     return `Очень жаль, вам не хватает денег на покупки`;
   };
   this.reset = function() {
     this.customerMoney = 0;
-    return this.customerMoney
   };
 };
 
@@ -75,13 +72,12 @@ console.log(change); // 190
 // Проверяем результат подсчета денег
 if (change !== null) {
   // При успешном обслуживании вызываем метод onSuccess
-  mango.onSuccess(change); // Спасибо за покупку, ваша сдача 190
+  console.log(mango.onSuccess(change)); // Спасибо за покупку, ваша сдача 190
 } else {
   // При неудачном обслуживании вызываем метод onError
-  mango.onError(); // Очень жаль, вам не хватает денег на покупки
+  console.log(mango.onError()); // Очень жаль, вам не хватает денег на покупки
 }
 // Вызываем reset при любом исходе обслуживания
 mango.reset();
 // Проверяем значения после reset
 console.log(mango.customerMoney); // 0
-
