@@ -33,17 +33,17 @@ const Cashier = function(name, productDatabase) {
   };
 
   this.countChange = function(totalPrice) {
-    const countChangeTotal =
-      this.customerMoney >= totalPrice ? this.customerMoney - totalPrice : null;
-    return countChangeTotal;
+  
+    return this.customerMoney >= totalPrice ? summ = this.customerMoney - totalPrice : null;
+    
   };
 
   this.onSuccess = function(change) {
-    return `Спасибо за покупку, ваша сдача ${change}!`;
+    console.log(`Спасибо за покупку, ваша сдача ${change}!`);
   };
 
   this.onError = function() {
-    return `Очень жаль, вам не хватает денег на покупки`;
+    console.log(`Очень жаль, вам не хватает денег на покупки`);
   };
   this.reset = function() {
     this.customerMoney = 0;
@@ -72,12 +72,16 @@ console.log(change); // 190
 // Проверяем результат подсчета денег
 if (change !== null) {
   // При успешном обслуживании вызываем метод onSuccess
-  console.log(mango.onSuccess(change)); // Спасибо за покупку, ваша сдача 190
+  mango.onSuccess(change); // Спасибо за покупку, ваша сдача 190
 } else {
   // При неудачном обслуживании вызываем метод onError
-  console.log(mango.onError()); // Очень жаль, вам не хватает денег на покупки
+  mango.onError(); // Очень жаль, вам не хватает денег на покупки
 }
 // Вызываем reset при любом исходе обслуживания
 mango.reset();
 // Проверяем значения после reset
 console.log(mango.customerMoney); // 0
+
+
+
+
