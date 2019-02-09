@@ -128,7 +128,7 @@ console.log(getUsersWithAge(users, 30, 40));
 // // [объект Moore Hensley, объект Sharlene Bush, объект Blackburn Dotson, объект Sheree Anthony]
 
 const getTotalBalance = arr =>
-  arr.map(preset => preset.balance).reduce((acc, element) => acc + element, 0);
+  arr.reduce((acc, element) => acc + element.balance, 0);
 
 console.log(getTotalBalance(users)); // 20916
 
