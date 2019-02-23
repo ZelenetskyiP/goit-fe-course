@@ -32,9 +32,9 @@ class Hamburger {
 
   get calculatePrice() {
     const topping = this._toppings
-      // .map(user => Hamburger.TOPPINGS[user].price)
-      // .reduce((acc, element) => acc + element);
-    .reduce((acc, element) => acc + Hamburger.TOPPINGS[this._toppings].calories, 0);
+      .map(user => Hamburger.TOPPINGS[user].price)
+      .reduce((acc, element) => acc + element);
+    // .reduce((acc, element) => acc + Hamburger.TOPPINGS[this._toppings].price, 0);        так не работае!! Ошибка!! Не знаю как решить.. 
 
     return (
       Hamburger.SIZES[this._size].price +
