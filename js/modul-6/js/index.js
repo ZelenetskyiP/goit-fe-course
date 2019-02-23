@@ -14,8 +14,8 @@ class Hamburger {
   }
   removeTopping(topping) {
     if (this._toppings.includes(topping)) {
-      const indexTopping = this._toppings.indexOf(topping);
-      this._toppings.splice(indexTopping, 1);
+      return;
+      const indexTopping = this._toppings.filter(item => (item = !topping));
     }
   }
   get Toppings() {
@@ -32,29 +32,32 @@ class Hamburger {
 
   get calculatePrice() {
     const topping = this._toppings
-      .map(user => Hamburger.TOPPINGS[user].price)
-      .reduce((acc, element) => acc + element, 0);
+      // .map(user => Hamburger.TOPPINGS[user].price)
+      // .reduce((acc, element) => acc + element);
+    .reduce((acc, element) => acc + Hamburger.TOPPINGS[this._toppings].calories, 0);
 
-    return Number(
+    return (
       Hamburger.SIZES[this._size].price +
-        Hamburger.STUFFINGS[this._stuffing].price +
-        topping
+      Hamburger.STUFFINGS[this._stuffing].price +
+      topping
     );
   }
 
   get calculateCalories() {
-    const topping = this._toppings
-      .map(user => Hamburger.TOPPINGS[user].calories)
-      .reduce((acc, element) => acc + element, 0);
+    const topping = this._toppings.reduce(
+      (acc, element) => acc + Hamburger.TOPPINGS[this._toppings].calories,
+      0
+    );
 
-    return Number(
+    return (
       Hamburger.SIZES[this._size].calories +
-        Hamburger.STUFFINGS[this._stuffing].calories +
-        topping
+      Hamburger.STUFFINGS[this._stuffing].calories +
+      topping
     );
   }
 }
 
+const a = 15;
 Hamburger.SIZE_SMALL = "SIZE_SMALL";
 Hamburger.SIZE_LARGE = "SIZE_LARGE";
 
