@@ -13,10 +13,8 @@ class Hamburger {
     }
   }
   removeTopping(topping) {
-    if (this._toppings.includes(topping)) {
-      return;
-      const indexTopping = this._toppings.filter(item => (item = !topping));
-    }
+    return;
+    const indexTopping = this._toppings.filter(item => (item = !topping));
   }
   get Toppings() {
     return this._toppings;
@@ -31,28 +29,28 @@ class Hamburger {
   }
 
   get calculatePrice() {
-    const topping = this._toppings
-      .map(user => Hamburger.TOPPINGS[user].price)
-      .reduce((acc, element) => acc + element);
-    // .reduce((acc, element) => acc + Hamburger.TOPPINGS[this._toppings].price, 0);        так не работае!! Ошибка!! Не знаю как решить.. 
+    const toppingPrice = this._toppings.reduce(
+      (acc, element) => acc + Hamburger.TOPPINGS[element].price,
+      0
+    );
 
     return (
       Hamburger.SIZES[this._size].price +
       Hamburger.STUFFINGS[this._stuffing].price +
-      topping
+      toppingPrice
     );
   }
 
   get calculateCalories() {
-    const topping = this._toppings.reduce(
-      (acc, element) => acc + Hamburger.TOPPINGS[this._toppings].calories,
+    const toppingPrice = this._toppings.reduce(
+      (acc, element) => acc + Hamburger.TOPPINGS[element].calories,
       0
     );
 
     return (
       Hamburger.SIZES[this._size].calories +
       Hamburger.STUFFINGS[this._stuffing].calories +
-      topping
+      toppingPrice
     );
   }
 }
