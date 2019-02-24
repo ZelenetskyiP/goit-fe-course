@@ -13,8 +13,7 @@ class Hamburger {
     }
   }
   removeTopping(topping) {
-    return;
-    const indexTopping = this._toppings.filter(item => (item = !topping));
+    return this._toppings.filter(item => (item = !topping));
   }
   get Toppings() {
     return this._toppings;
