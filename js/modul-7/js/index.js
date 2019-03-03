@@ -24,48 +24,53 @@ const posts = [
   }
 ];
 
-function createPostCard({ imgF = "", titleF = "", textF = "", linkF = "" }) {
-  const main = document.querySelector(".main");
-  const divv = document.createElement("div");
-  divv.classList.add("post");
+function createPostCard({
+  imgCard = "",
+  titleCard = "",
+  textCard = "",
+  linkCard = ""
+}) {
+  const card = document.querySelector(".card");
+  const divCard = document.createElement("div");
+  divCard.classList.add("post");
 
   const img = document.createElement("img");
   img.classList.add("post__image");
-  img.setAttribute("src", imgF);
+  img.setAttribute("src", imgCard);
   img.setAttribute("alt", "post image");
 
   const h2 = document.createElement("h2");
   h2.classList.add("post__title");
-  h2.textContent = titleF;
+  h2.textContent = titleCard;
 
   const p = document.createElement("p");
   p.classList.add("post__text");
-  p.textContent = textF;
+  p.textContent = textCard;
 
   const btn = document.createElement("a");
   btn.classList.add("button");
-  btn.setAttribute("href", linkF);
+  btn.setAttribute("href", linkCard);
   btn.textContent = "Read more";
 
-  main.append(divv);
-  divv.append(img, h2, p, btn);
+  card.append(divCard);
+  divCard.append(img, h2, p, btn);
 
-  return divv;
+  return divCard;
 }
 
 function createCards(arr) {
   const list = [];
-  arr.forEach(item => {
+  arr.map(item => {
     const element = createPostCard({
-      imgF: item.img,
-      titleF: item.title,
-      textF: item.text,
-      linkF: item.link
+      imgCard: item.img,
+      titleCard: item.title,
+      textCard: item.text,
+      linkCard: item.link
     });
     list.push(element);
   });
-  const rroot = document.querySelector(".main");
-  rroot.append(...list);
+  const rootCard = document.querySelector(".card");
+  rootCard.append(...list);
 }
 
 createCards(posts);
