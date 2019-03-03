@@ -59,18 +59,15 @@ function createPostCard({
 }
 
 function createCards(arr) {
-  const list = [];
-  arr.map(item => {
+  const a = arr.map(item => {
     const element = createPostCard({
       imgCard: item.img,
       titleCard: item.title,
       textCard: item.text,
       linkCard: item.link
     });
-    list.push(element);
+    return element;
   });
-  const rootCard = document.querySelector(".card");
-  rootCard.append(...list);
 }
 
 createCards(posts);
