@@ -33,40 +33,41 @@ function createPostCard({
   const card = document.querySelector(".card");
   const divCard = document.createElement("div");
   divCard.classList.add("post");
+  card.appendChild(divCard);
 
   const img = document.createElement("img");
   img.classList.add("post__image");
   img.setAttribute("src", imgCard);
   img.setAttribute("alt", "post image");
+  divCard.appendChild(img);
 
   const h2 = document.createElement("h2");
   h2.classList.add("post__title");
   h2.textContent = titleCard;
+  divCard.appendChild(h2);
 
   const p = document.createElement("p");
   p.classList.add("post__text");
   p.textContent = textCard;
+  divCard.appendChild(p);
 
   const btn = document.createElement("a");
   btn.classList.add("button");
   btn.setAttribute("href", linkCard);
   btn.textContent = "Read more";
-
-  card.append(divCard);
-  divCard.append(img, h2, p, btn);
+  divCard.appendChild(btn);
 
   return divCard;
 }
 
 function createCards(arr) {
-  const a = arr.map(item => {
-    const element = createPostCard({
+  arr.map(item => {
+    return createPostCard({
       imgCard: item.img,
       titleCard: item.title,
       textCard: item.text,
       linkCard: item.link
     });
-    return element;
   });
 }
 
