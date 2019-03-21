@@ -37,6 +37,7 @@ function createImg({ previewImg = "", fullviewImg = "", altImg = "" }) {
   const preview = document.querySelector(".preview");
   const li = document.createElement("li");
   const img = document.createElement("img");
+
   img.setAttribute("src", previewImg);
   img.setAttribute("data-fullview", fullviewImg);
   img.setAttribute("alt", altImg);
@@ -66,9 +67,20 @@ function bigImage(event) {
 
   const target = event.target;
   if (target.nodeName === "IMG") {
-    const targetAtribute = target.getAttribute("data-fullview");
-    fullview.firstElementChild.setAttribute("src", targetAtribute);
+    const getTarget = target.getAttribute("data-fullview");
+    const setTarget = fullview.firstElementChild.setAttribute("src", getTarget);
+
+    ////////////////////
+    const links = document.querySelectorAll("img");
+    links.forEach(link => {
+      if (link !== target) {
+        link.classList.remove("activ-img");
+      } else {
+        link.classList.add("activ-img");
+      }
+    });
   }
+
   return;
 }
 
